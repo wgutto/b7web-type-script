@@ -1,3 +1,4 @@
+// Função com parâmetro tipado/seguro
 function firstLetterUpperCase(name: string) {
     let firstLetter = name[0]
 
