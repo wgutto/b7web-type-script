@@ -1,10 +1,9 @@
-// Função com parâmetro e retorno tipado/seguro
-function firstLetterUpperCase(name) {
-    var firstLetter = name[0];
-    return "".concat(firstLetter).concat(name.substring(1));
+// Em um objeto vc tem que definir o tipo de cada elemento presente nele
+function resumo(usuario) {
+    return "Ol\u00E1 ".concat(usuario.nome, ", vc tem ").concat(usuario.idade, " anos");
 }
-console.log(firstLetterUpperCase('Augusto'));
-function somar(n1, n2) {
-    return n1 + n2;
-}
-console.log(somar(3, 6));
+var usuario = {
+    nome: 'Augusto',
+    idade: 22
+};
+resumo(usuario);
